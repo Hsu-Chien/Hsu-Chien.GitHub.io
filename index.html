@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红河州自驾游攻略：个旧、石林、弥勒五日精华行程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #c32f27 0%, #e65c50 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 15px;
+        }
+        
+        .info-box {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        
+        .info-item {
+            text-align: center;
+            margin: 5px 10px;
+        }
+        
+        .info-item .label {
+            font-size: 13px;
+            opacity: 0.9;
+        }
+        
+        .info-item .value {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .day-section {
+            margin-bottom: 40px;
+            border-left: 4px solid #e65c50;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .day-title {
+            background-color: #e65c50;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .day-content {
+            padding: 5px 0;
+        }
+        
+        .time-line {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+        
+        .time-line:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 8px;
+            width: 12px;
+            height: 12px;
+            background-color: #e65c50;
+            border-radius: 50%;
+        }
+        
+        .time {
+            font-weight: bold;
+            color: #e65c50;
+            margin-bottom: 5px;
+        }
+        
+        .highlight {
+            background-color: #fff8f0;
+            border-left: 3px solid #ffa726;
+            padding: 12px 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .highlight-title {
+            color: #e65100;
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .highlight-title:before {
+            content: "⭐";
+            margin-right: 5px;
+        }
+        
+        .accommodation {
+            background-color: #f0f7ff;
+            border: 1px dashed #4dabf7;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .accommodation h4 {
+            color: #1971c2;
+            margin-bottom: 8px;
+        }
+        
+        .tips {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+        
+        .tips h3 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #a5d6a7;
+        }
+        
+        .expense-summary {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            gap: 15px;
+        }
+        
+        .expense-card {
+            flex: 1;
+            min-width: 200px;
+            background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .expense-card h4 {
+            color: #495057;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .expense-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dashed #dee2e6;
+        }
+        
+        .expense-item:last-child {
+            border-bottom: none;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .info-box {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .info-item {
+                margin: 10px 0;
+            }
+            
+            .expense-summary {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>红河州自驾游攻略：个旧、石林、弥勒五日精华行程</h1>
+            <p class="subtitle">探秘喀斯特奇观 · 体验彝族风情 · 享受温泉休闲</p>
+            <div class="info-box">
+                <div class="info-item">
+                    <div class="label">行程天数</div>
+                    <div class="value">5天4晚</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">适合季节</div>
+                    <div class="value">全年适宜</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">行程总长</div>
+                    <div class="value">约450公里</div>
+                </div>
+                <div class="info-item">
+                    <div class="label">人均预算</div>
+                    <div class="value">1500-2000元</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <p style="margin-bottom: 20px; color: #666;">这条线路串联了红河州的精华景点，从个旧出发，途经石林，最终抵达弥勒，既有壮观的自然奇观，也有丰富的文化体验和美食享受，特别适合家庭出游或朋友结伴自驾。</p>
+            
+            <!-- Day 1 -->
+            <div class="day-section">
+                <h2 class="day-title">Day 1：个旧 → 石林杏林大观园 + 石海温泉</h2>
+                <div class="day-content">
+                    <div class="time-line">
+                        <div class="time">09:00-13:00</div>
+                        <p>从个旧出发自驾至石林杏林大观园，走石蒙高速→石林收费站→九石阿公路，车程约4小时，过路费约60元，建议中途服务区休息1次。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">13:00-14:00</div>
+                        <p>抵达石林后，先用午餐，推荐景区附近的农家乐，品尝当地特色菜。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">14:00-17:00</div>
+                        <p>游览<strong>杏林大观园</strong>：</p>
+                        <ul style="padding-left: 20px; margin-top: 8px;">
+                            <li><strong>黑石箐石林</strong>：欣赏独特的黑色喀斯特奇观</li>
+                            <li><strong>国药博览园</strong>：了解中医药文化，认识各种药用植物</li>
+                            <li><strong>杏林禅寺</strong>：祈福许愿，感受佛教文化氛围</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">17:00-19:30</div>
+                        <p>前往<strong>石海温泉</strong>，票内包含晚餐和早餐。推荐泡池：氟疗池（特色，对身体有益）、牛奶池、玫瑰池、中药池、儿童戏水池。</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">第一天亮点</div>
+                        <p>黑石箐石林的黑色喀斯特地貌非常独特，与常见的石林景观不同，值得细细观赏。石海温泉的氟疗池是当地特色，对关节和皮肤有好处，不要错过。</p>
+                    </div>
+                    
+                    <div class="accommodation">
+                        <h4>🏡 住宿推荐</h4>
+                        <p>建议选择石海温泉内的住宿，方便泡温泉，或者选择以下推荐：</p>
+                        <ul style="padding-left: 20px; margin-top: 8px;">
+                            <li>石林彝米水乡客栈（彝族风格，体验当地文化）</li>
+                            <li>石林顾家别院（位于彝族第一村，环境优美）</li>
+                            <li>石林避暑宾馆（性价比高，设施齐全）</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 2 -->
+            <div class="day-section">
+                <h2 class="day-title">Day 2：石林冰雪海洋世界全天</h2>
+                <div class="day-content">
+                    <div class="time-line">
+                        <div class="time">09:00-17:30</div>
+                        <p>全天游览<strong>石林冰雪海洋世界</strong>：</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">上午 9:30-12:00</div>
+                        <p>海洋馆 + 极地馆，观看白鲸、海豚、企鹅表演。美人鱼表演有两场（10:30和14:30）。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">中午 12:00-13:30</div>
+                        <p>景区内海洋餐厅简餐或自带干粮。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">下午 14:45-17:30</div>
+                        <p>观看皇家大马戏（15:00开场） + 体验冰雪世界（滑雪、冰雕）。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">18:00-19:30</div>
+                        <p>晚餐前往石林县城<strong>双龙小街姐妹烧烤</strong>（人均35元），本地人常去，味道正宗。推荐：木姜子烤鱼、烤五花肉、烤茄子。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">19:30</div>
+                        <p>返回住宿地休息。</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">第二天亮点</div>
+                        <p>冰雪海洋世界是西南地区少有的综合海洋公园，冰雪世界在炎热的云南格外受欢迎。晚上一定要去姐妹烧烤，木姜子烤鱼是当地特色，风味独特。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 3 -->
+            <div class="day-section">
+                <h2 class="day-title">Day 3：石林风景区 + 乃古石林 → 弥勒</h2>
+                <div class="day-content">
+                    <div class="time-line">
+                        <div class="time">09:00-12:30</div>
+                        <p>游览<strong>石林风景区</strong>（5A级景区，门票约130元/人，网购110元）：</p>
+                        <ul style="padding-left: 20px; margin-top: 8px;">
+                            <li><strong>大石林</strong>：石林胜景、望峰亭，俯瞰"林海"全景</li>
+                            <li><strong>小石林</strong>：阿诗玛化身石，拍照打卡必到</li>
+                        </ul>
+                        <p style="margin-top: 8px;">贴士：景区较大，建议乘电瓶车（25元/人）节省体力，2小时可游览主要景点。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">12:30-13:30</div>
+                        <p>景区附近彝家风味餐厅午餐，推荐彝家坨坨肉、路南卤腐等地道彝族美食。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">14:30-16:00</div>
+                        <p>石林→弥勒，走广昆高速，车程约1小时，过路费约20元。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">16:30</div>
+                        <p>抵达弥勒，办理入住。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">17:30</div>
+                        <p>晚饭前往弥勒市区髯翁路夜市，品尝当地小吃。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">19:00</div>
+                        <p>饭后生态园散步，消食观景。</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">第三天亮点</div>
+                        <p>石林风景区是世界自然遗产，大石林的壮观和小石林的秀美各有特色。彝族美食坨坨肉非常有特色，是当地待客的最高礼节。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 4 -->
+            <div class="day-section">
+                <h2 class="day-title">Day 4：弥勒东风韵 → 红河水乡</h2>
+                <div class="day-content">
+                    <div class="time-line">
+                        <div class="time">09:00-12:00</div>
+                        <p>游览<strong>东风韵艺术小镇</strong>（免费入园，万花筒艺术馆约40元/人），欣赏独特的红砖建筑艺术，拍照非常出片。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">12:30-13:30</div>
+                        <p>弥勒市区卤鸡米线店午餐（人均15元），推荐竹园卤鸡米线（当地老字号），卤香浓郁，配料丰富。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">14:30-16:30</div>
+                        <p><strong>锦屏山风景区</strong>（门票约40元/人），登1999级台阶（或乘摆渡车30元/人）瞻仰19.99米高弥勒大佛（世界最大笑佛）。</p>
+                        <p style="margin-top: 8px;">新增体验：森林滑道（50元/人），从山顶滑下，节省下山时间，惊险刺激。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">17:00-18:30</div>
+                        <p>可邑小镇（门票约60元/人），体验彝族文化，观看阿细跳月表演。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">18:30-21:00</div>
+                        <p><strong>红河水乡</strong>（免费），欣赏灯光夜景，乘船游湖（约30元/人）。</p>
+                        <p style="margin-top: 8px;">推荐餐厅：泓宾楼（红河水乡内），78元炒菜套餐，四菜一汤，水果甜品自助，人均20元。</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">第四天亮点</div>
+                        <p>东风韵艺术小镇是网红打卡地，建筑风格独特。弥勒大佛是世界最大的笑佛，非常壮观。红河水乡的夜景很美，乘船游湖很浪漫。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Day 5 -->
+            <div class="day-section">
+                <h2 class="day-title">Day 5：弥勒太平湖森林公园 → 返程</h2>
+                <div class="day-content">
+                    <div class="time-line">
+                        <div class="time">09:00-12:30</div>
+                        <p><strong>太平湖森林公园</strong>，必看花海，租电动车（60元/小时）游览更轻松。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">12:30-14:00</div>
+                        <p>嘉里饭庄午餐，品尝当地特色菜。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">15:00</div>
+                        <p>可逛红酒庄园，了解弥勒葡萄酒文化，品尝当地葡萄酒。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">16:00-18:00</div>
+                        <p>开远南正街晚餐，品尝开远特色小吃。</p>
+                    </div>
+                    
+                    <div class="time-line">
+                        <div class="time">21:00</div>
+                        <p>结束愉快的红河之旅，返程回家。</p>
+                    </div>
+                    
+                    <div class="highlight">
+                        <div class="highlight-title">第五天亮点</div>
+                        <p>太平湖森林公园的花海非常壮观，不同季节有不同的花卉。弥勒是云南葡萄酒的重要产区，红酒庄园值得一游。</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 费用概览 -->
+            <div class="tips">
+                <h3>💰 费用概算（按2人计算）</h3>
+                <div class="expense-summary">
+                    <div class="expense-card">
+                        <h4>交通费用</h4>
+                        <div class="expense-item">
+                            <span>过路费</span>
+                            <span>约160元</span>
+                        </div>
+                        <div class="expense-item">
+                            <span>油费</span>
+                            <span>约400元</span>
+                        </div>
+                        <div class="expense-item">
+                            <span>停车费</span>
+                            <span>约100元</span>
+                        </div>
+                        <div class="expense-item" style="font-weight: bold;">
+                            <span>小计</span>
+                            <span>660元</span>
+                        </div>
+                    </div>
+                    
+                    <div class="expense-card">
+                        <h4>门票费用</h4>
+                        <div class="expense-item">
+                            <span>石林风景区</span>
+                            <span>220元</span>
+                        </div>
+                        <div class="expense-item">
+                            <span>冰雪海洋世界</span>
+                            <span>380元</span>
+                        </div>
+                        <div class="expense-item">
+                            <span>石海温泉</span>
+                            <span>300元</span>
+                        </div>
+                        <div class="expense-item">
+                            <span>锦屏山+可邑小镇</span>
+                            <span>200元</span>
+                        </div>
+                        <div class="expense-item" style="font-weight: bold;">
+                            <span>小计</span>
+                            <span>1100元</span>
+                        </div>
+                    </div>
+                    
+                    <div class="expense-card">
+                        <h4>食宿费用</h4>
+                        <div class="expense-item">
+                            <span>住宿（4晚）</span>
+                            <span>800元</span>
+                        </div>
+                        <div class="expense-item">
+                            <span>餐饮（5天）</span>
+                            <span>750元</span>
+                        </div>
+                        <div class="expense-item" style="font-weight: bold;">
+                            <span>小计</span>
+                            <span>1550元</span>
+                        </div>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 15px; font-weight: bold; color: #c32f27;">总费用预估：3310元（两人），人均约1655元</p>
+            </div>
+            
+            <!-- 实用贴士 -->
+            <div class="tips">
+                <h3>📌 实用贴士</h3>
+                <ol style="padding-left: 20px;">
+                    <li>最佳出行时间：3-5月和9-11月，气候宜人，避开雨季和酷暑</li>
+                    <li>石林景区内步行较多，建议穿舒适的运动鞋</li>
+                    <li>温泉区需自备泳衣，也可在景区购买但价格较高</li>
+                    <li>弥勒紫外线较强，注意防晒，携带太阳镜和帽子</li>
+                    <li>提前预订住宿，特别是节假日期间</li>
+                    <li>部分景区门票可提前在线购买，通常有优惠</li>
+                    <li>自驾注意安全，山区道路弯多，谨慎驾驶</li>
+                </ol>
+            </div>
+            
+            <!-- 行程亮点 -->
+            <div class="tips">
+                <h3>✨ 行程亮点</h3>
+                <ul style="padding-left: 20px;">
+                    <li><strong>多元景观体验</strong>：从喀斯特地貌到温泉、海洋馆、艺术小镇，内容丰富</li>
+                    <li><strong>深度文化感受</strong>：彝族文化、中医药文化、佛教文化、葡萄酒文化</li>
+                    <li><strong>美食之旅</strong>：品尝彝家坨坨肉、卤鸡米线、木姜子烤鱼等地道美食</li>
+                    <li><strong>休闲放松</strong>：温泉、生态园散步、红河水乡夜景，节奏张弛有度</li>
+                    <li><strong>适合拍照</strong>：石林奇观、东风韵艺术建筑、太平湖花海都是绝佳摄影地</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>红河州五日自驾游攻略 · 行程仅供参考，请根据实际情况调整</p>
+            <p>祝您旅途愉快！</p>
+        </div>
+    </div>
+    
+    <!-- 微信文章内容部分 -->
+    <div style="display: none;" id="wechat-content">
+        <!-- 这里的内容可以直接复制到微信公众号编辑器 -->
+        <h2>红河州自驾游攻略：个旧、石林、弥勒五日精华行程</h2>
+        <p>探秘喀斯特奇观 · 体验彝族风情 · 享受温泉休闲</p>
+        
+        <p>行程天数：5天4晚 | 适合季节：全年适宜 | 行程总长：约450公里 | 人均预算：1500-2000元</p>
+        
+        <p>这条线路串联了红河州的精华景点，从个旧出发，途经石林，最终抵达弥勒，既有壮观的自然奇观，也有丰富的文化体验和美食享受，特别适合家庭出游或朋友结伴自驾。</p>
+        
+        <h3>Day 1：个旧 → 石林杏林大观园 + 石海温泉</h3>
+        <p><strong>09:00-13:00</strong> 从个旧出发自驾至石林杏林大观园，走石蒙高速→石林收费站→九石阿公路，车程约4小时，过路费约60元，建议中途服务区休息1次。</p>
+        <p><strong>13:00-14:00</strong> 抵达石林后，先用午餐，推荐景区附近的农家乐，品尝当地特色菜。</p>
+        <p><strong>14:00-17:00</strong> 游览<strong>杏林大观园</strong>：黑石箐石林（黑色喀斯特奇观）、国药博览园（了解中医药文化）、杏林禅寺（祈福许愿）</p>
+        <p><strong>17:00-19:30</strong> 前往<strong>石海温泉</strong>，票内包含晚餐和早餐。推荐泡池：氟疗池（特色，对身体有益）、牛奶池、玫瑰池、中药池、儿童戏水池。</p>
+        <p>⭐第一天亮点：黑石箐石林的黑色喀斯特地貌非常独特，与常见的石林景观不同，值得细细观赏。石海温泉的氟疗池是当地特色，对关节和皮肤有好处，不要错过。</p>
+        
+        <h3>Day 2：石林冰雪海洋世界全天</h3>
+        <p><strong>09:00-17:30</strong> 全天游览<strong>石林冰雪海洋世界</strong></p>
+        <p><strong>上午 9:30-12:00</strong> 海洋馆 + 极地馆，观看白鲸、海豚、企鹅表演。美人鱼表演有两场（10:30和14:30）。</p>
+        <p><strong>中午 12:00-13:30</strong> 景区内海洋餐厅简餐或自带干粮。</p>
+        <p><strong>下午 14:45-17:30</strong> 观看皇家大马戏（15:00开场） + 体验冰雪世界（滑雪、冰雕）。</p>
+        <p><strong>18:00-19:30</strong> 晚餐前往石林县城<strong>双龙小街姐妹烧烤</strong>（人均35元），本地人常去，味道正宗。推荐：木姜子烤鱼、烤五花肉、烤茄子。</p>
+        <p><strong>19:30</strong> 返回住宿地休息。</p>
+        <p>⭐第二天亮点：冰雪海洋世界是西南地区少有的综合海洋公园，冰雪世界在炎热的云南格外受欢迎。晚上一定要去姐妹烧烤，木姜子烤鱼是当地特色，风味独特。</p>
+        
+        <h3>Day 3：石林风景区 + 乃古石林 → 弥勒</h3>
+        <p><strong>09:00-12:30</strong> 游览<strong>石林风景区</strong>（5A级景区，门票约130元/人，网购110元）：大石林（石林胜景、望峰亭）、小石林（阿诗玛化身石）。贴士：景区较大，建议乘电瓶车（25元/人）节省体力，2小时可游览主要景点。</p>
+        <p><strong>12:30-13:30</strong> 景区附近彝家风味餐厅午餐，推荐彝家坨坨肉、路南卤腐等地道彝族美食。</p>
+        <p><strong>14:30-16:00</strong> 石林→弥勒，走广昆高速，车程约1小时，过路费约20元。</p>
+        <p><strong>16:30</strong> 抵达弥勒，办理入住。</p>
+        <p><strong>17:30</strong> 晚饭前往弥勒市区髯翁路夜市，品尝当地小吃。</p>
+        <p><strong>19:00</strong> 饭后生态园散步，消食观景。</p>
+        <p>⭐第三天亮点：石林风景区是世界自然遗产，大石林的壮观和小石林的秀美各有特色。彝族美食坨坨肉非常有特色，是当地待客的最高礼节。</p>
+        
+        <h3>Day 4：弥勒东风韵 → 红河水乡</h3>
+        <p><strong>09:00-12:00</strong> 游览<strong>东风韵艺术小镇</strong>（免费入园，万花筒艺术馆约40元/人），欣赏独特的红砖建筑艺术，拍照非常出片。</p>
+        <p><strong>12:30-13:30</strong> 弥勒市区卤鸡米线店午餐（人均15元），推荐竹园卤鸡米线（当地老字号），卤香浓郁，配料丰富。</p>
+        <p><strong>14:30-16:30</strong> <strong>锦屏山风景区</strong>（门票约40元/人），登1999级台阶（或乘摆渡车30元/人）瞻仰19.99米高弥勒大佛（世界最大笑佛）。新增体验：森林滑道（50元/人），从山顶滑下，节省下山时间，惊险刺激。</p>
+        <p><strong>17:00-18:30</strong> 可邑小镇（门票约60元/人），体验彝族文化，观看阿细跳月表演。</p>
+        <p><strong>18:30-21:00</strong> <strong>红河水乡</strong>（免费），欣赏灯光夜景，乘船游湖（约30元/人）。推荐餐厅：泓宾楼（红河水乡内），78元炒菜套餐，四菜一汤，水果甜品自助，人均20元。</p>
+        <p>⭐第四天亮点：东风韵艺术小镇是网红打卡地，建筑风格独特。弥勒大佛是世界最大的笑佛，非常壮观。红河水乡的夜景很美，乘船游湖很浪漫。</p>
+        
+        <h3>Day 5：弥勒太平湖森林公园 → 返程</h3>
+        <p><strong>09:00-12:30</strong> <strong>太平湖森林公园</strong>，必看花海，租电动车（60元/小时）游览更轻松。</p>
+        <p><strong>12:30-14:00</strong> 嘉里饭庄午餐，品尝当地特色菜。</p>
+        <p><strong>15:00</strong> 可逛红酒庄园，了解弥勒葡萄酒文化，品尝当地葡萄酒。</p>
+        <p><strong>16:00-18:00</strong> 开远南正街晚餐，品尝开远特色小吃。</p>
+        <p><strong>21:00</strong> 结束愉快的红河之旅，返程回家。</p>
+        <p>⭐第五天亮点：太平湖森林公园的花海非常壮观，不同季节有不同的花卉。弥勒是云南葡萄酒的重要产区，红酒庄园值得一游。</p>
+        
+        <h3>💰 费用概算（按2人计算）</h3>
+        <p><strong>交通费用：</strong>过路费约160元 + 油费约400元 + 停车费约100元 = 660元</p>
+        <p><strong>门票费用：</strong>石林风景区220元 + 冰雪海洋世界380元 + 石海温泉300元 + 锦屏山+可邑小镇200元 = 1100元</p>
+        <p><strong>食宿费用：</strong>住宿（4晚）800元 + 餐饮（5天）750元 = 1550元</p>
+        <p><strong>总费用预估：3310元（两人），人均约1655元</strong></p>
+        
+        <h3>📌 实用贴士</h3>
+        <ol>
+            <li>最佳出行时间：3-5月和9-11月，气候宜人，避开雨季和酷暑</li>
+            <li>石林景区内步行较多，建议穿舒适的运动鞋</li>
+            <li>温泉区需自备泳衣，也可在景区购买但价格较高</li>
+            <li>弥勒紫外线较强，注意防晒，携带太阳镜和帽子</li>
+            <li>提前预订住宿，特别是节假日期间</li>
+            <li>部分景区门票可提前在线购买，通常有优惠</li>
+            <li>自驾注意安全，山区道路弯多，谨慎驾驶</li>
+        </ol>
+        
+        <h3>✨ 行程亮点</h3>
+        <ul>
+            <li><strong>多元景观体验</strong>：从喀斯特地貌到温泉、海洋馆、艺术小镇，内容丰富</li>
+            <li><strong>深度文化感受</strong>：彝族文化、中医药文化、佛教文化、葡萄酒文化</li>
+            <li><strong>美食之旅</strong>：品尝彝家坨坨肉、卤鸡米线、木姜子烤鱼等地道美食</li>
+            <li><strong>休闲放松</strong>：温泉、生态园散步、红河水乡夜景，节奏张弛有度</li>
+            <li><strong>适合拍照</strong>：石林奇观、东风韵艺术建筑、太平湖花海都是绝佳摄影地</li>
+        </ul>
+        
+        <p>红河州五日自驾游攻略 · 行程仅供参考，请根据实际情况调整</p>
+        <p>祝您旅途愉快！</p>
+    </div>
+</body>
+</html>
