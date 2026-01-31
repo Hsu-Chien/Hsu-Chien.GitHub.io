@@ -652,5 +652,45 @@
         <p>红河州五日自驾游攻略 · 行程仅供参考，请根据实际情况调整</p>
         <p>祝您旅途愉快！</p>
     </div>
+    </style>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script>
+        wx.config({
+            debug: false, // 首次调试可设为 true，会在控制台打印信息
+            appId: 'wx7362f35b35f71abe', // 你的AppID
+            timestamp: 1769861906, // 你生成签名时用的时间戳
+            nonceStr: 'EGPbzZKsKXjbyawB', // 你生成签名时用的随机串
+            signature: '4701317ba56b9cd2a4a07cf9807af77b6199d4cf', // 你得到的签名
+            jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData'] // 需要调用的接口列表
+        });
+
+        wx.ready(function () {
+        // 配置“分享给朋友”及“分享到QQ”
+        wx.updateAppMessageShareData({
+            title: '这是你的分享标题', // 请修改为你想要的标题
+            desc: '这是你的分享描述', // 请修改为你想要的描述
+            link: window.location.href, // 分享链接，默认当前页地址
+            imgUrl: 'https://hsu-chien.github.io/图片路径.jpg', // 分享图标，需为完整URL
+            success: function () {
+                // 分享成功后的回调
+            }
+        });
+
+        // 配置“分享到朋友圈”及“分享到QQ空间”
+        wx.updateTimelineShareData({
+            title: '这是朋友圈分享标题', // 请修改
+            link: window.location.href,
+            imgUrl: 'https://hsu-chien.github.io/图片路径.jpg',
+            success: function () {
+                // 分享成功后的回调
+                }
+            });
+        });
+
+        wx.error(function (res) {
+            // 配置失败时的回调，可用于调试
+            console.error('JS-SDK配置失败：', res);
+        });
+    </script>
 </body>
 </html>
