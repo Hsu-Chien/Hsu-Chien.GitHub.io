@@ -653,8 +653,8 @@
         <p>祝您旅途愉快！</p>
     </div>
     </style>
-    <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
-    <script>
+    <!-- <script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script> -->
+    <!-- <script>
         wx.config({
             debug: false, // 首次调试可设为 true，会在控制台打印信息
             appId: 'wx7362f35b35f71abe', // 你的AppID
@@ -690,6 +690,16 @@
         wx.error(function (res) {
             // 配置失败时的回调，可用于调试
             console.error('JS-SDK配置失败：', res);
+        });
+    </script> -->
+    <script>
+        wx.config({
+            debug: false,
+            appId: 'wx7362f35b35f71abe',
+            timestamp: 1770096910725, // 替换为新的！
+            nonceStr: 'm3EehdF09y6f9Yt9', // 替换为新的！
+            signature: '7mo9kzLF0zXvfXKd2ScDpBxXrBwfbzgVbDrl59Yj2H4mnaTvVII2O4S3cmjK4pf0nwpf6LptbV7nYTUiZDOTAg', // 替换为新的！
+            jsApiList: ['updateAppMessageShareData']
         });
     </script>
 </body>
